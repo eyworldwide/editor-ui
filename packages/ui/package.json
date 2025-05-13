@@ -55,7 +55,10 @@
     "build:nodts": "tsup --no-dts",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "npx chromatic --project-token=CHROMATIC_TOKEN"
+    "chromatic": "npx chromatic --project-token=CHROMATIC_TOKEN",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
   },
   "keywords": [
     "ui",
@@ -98,12 +101,17 @@
     "@storybook/react-vite": "^8.2.9",
     "@storybook/test": "^8.2.9",
     "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.5.0",
     "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/jest": "^29.5.12",
     "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
+    "@types/testing-library__jest-dom": "^5.14.9",
     "postcss": "^8.4.41",
     "prop-types": "^15.8.1",
-    "storybook": "^8.2.9"
+    "storybook": "^8.2.9",
+    "vitest": "^1.6.1"
   },
   "dependencies": {
     "@radix-ui/colors": "^3.0.0",
